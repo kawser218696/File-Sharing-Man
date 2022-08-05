@@ -1,6 +1,6 @@
-# (©)Codexbotz
-# Recode by @mrismanaziz
-# t.me/SharingUserbot & t.me/Lunatic0de
+# (©)KawserPlayz
+# Recode by @Kawser218696
+# t.me/mirrorwithkawser & t.me/Kawser218696_update
 
 import asyncio
 
@@ -37,7 +37,7 @@ from helper_func import encode
     )
 )
 async def channel_post(client: Client, message: Message):
-    reply_text = await message.reply_text("<code>Tunggu Sebentar...</code>", quote=True)
+    reply_text = await message.reply_text("<code>Wait Sometimes...</code>", quote=True)
     try:
         post_message = await message.copy(
             chat_id=client.db_channel.id, disable_notification=True
@@ -49,7 +49,7 @@ async def channel_post(client: Client, message: Message):
         )
     except Exception as e:
         LOGGER(__name__).warning(e)
-        await reply_text.edit_text("<b>Telah Terjadi Error...</b>")
+        await reply_text.edit_text("<b>Internal Error...</b>")
         return
     converted_id = post_message.message_id * abs(client.db_channel.id)
     string = f"get-{converted_id}"
