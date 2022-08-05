@@ -1,6 +1,6 @@
-# (©)Codexbotz
+# (©)KawserPlayz
 # Recode by @mrismanaziz
-# t.me/SharingUserbot & t.me/Lunatic0de
+# t.me/mirrorwithkawser & t.me/Kawser218696_Update
 
 import asyncio
 
